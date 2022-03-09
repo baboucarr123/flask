@@ -1,0 +1,24 @@
+<html>
+
+{% for record in personal %}
+
+<h2> Name of employee :<font color='green'> {{record[1]}} </font>
+<h2> department: {{record[2]}} <br>
+
+{% endfor %}
+Salary Details: <br>
+</h2>
+
+{% for rec in accounts %}
+
+{{rec[1]}}, {{rec[2]}} <br>
+
+{% endfor %}
+
+<br>
+    <h2> Employee Salary: </h2>
+    <a href="http://localhost:5000/enternewpayslip"> New payslip </a>
+    
+
+
+</html>

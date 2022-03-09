@@ -1,0 +1,27 @@
+<html>
+    <script>
+        function checkdata(){
+            if(A.value==""){
+                alert("enter first")
+                A.focus()
+                return false
+            }else{
+                if(B.value==""){
+                    alert("enter second")
+                    B.focus()
+                    return false
+                }
+            }
+            }
+        
+    </script>
+
+<form action="http://localhost:5000/data" method="post" onsubmit="return checkdata()">
+
+Enter First Number:<input id="A" type="text" name="num1"> <br>
+Enter second Number:<input id="B" type="text" name="num2"> <br>
+
+<input type="submit" value="ok">
+
+</form>
+</html>

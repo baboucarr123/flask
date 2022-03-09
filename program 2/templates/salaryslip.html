@@ -9,7 +9,7 @@
     <td> Salary: </td>
     <td> {{salary}} </td>
     </tr>
-    td> Tax Rate: </td>
+    <td> Tax Rate: </td>
     {% if salary >=2000 %}
         <td> 20% </td>
     {% else %}
@@ -23,11 +23,14 @@
         {% else %}
         <td> {{ salary*15/100}} </td>
         {% endif%}
-        <td> {{salary*20/100}} </td>
         </tr>
         <tr>
             <td> Net Salary: </td>
+            {% if salary >=2000%}
             <td> {{salary-(salary*20/100)}} </td>
+            {% else %}
+        <td> {{salary-(salary*15/100)}} </td>
+        {% endif%}
             </tr>
         </table>
 </html>
